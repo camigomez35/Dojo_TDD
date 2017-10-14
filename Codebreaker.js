@@ -1,6 +1,7 @@
-var trueNumber = '1234';
+ let trueNumber = "";
 
 class Codebreaker{
+
   adivinar(numero){
 
     if(isNaN(numero) || numero.length != 4 || (numero.split('')).indexOf('e')!=-1){
@@ -27,12 +28,10 @@ class Codebreaker{
       }
     })
     return resultadoX + resultado_;
+  }
+
+  setNumber(number){
+    trueNumber = number;
+  }
 }
-
-
-
-}
-
-
-
 module.exports = Codebreaker;

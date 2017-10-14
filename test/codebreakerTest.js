@@ -10,6 +10,12 @@ describe( 'Test pass', function(){
 })
 
 describe('Codebreaker Test', function(){
+
+    beforeEach(function(){
+        codebreaker.setNumber('1234')
+    })
+
+
     it('Assert all number - XXXX', function(){
         let resultado = codebreaker.adivinar("1234")
         test.equal('XXXX', resultado)
