@@ -1,9 +1,10 @@
- let trueNumber = "";
+let trueNumber = "";
 
 class Codebreaker{
-
   adivinar(numero){
-
+    if(trueNumber == ''){
+      return 'Number is not defined'
+    }
     if(isNaN(numero) || numero.length != 4 || (numero.split('')).indexOf('e')!=-1){
       return "error"
     }
@@ -34,4 +35,8 @@ class Codebreaker{
     trueNumber = number;
   }
 }
+
+
+
+
 module.exports = Codebreaker;

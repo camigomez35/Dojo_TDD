@@ -86,5 +86,9 @@ describe('Codebreaker Test', function(){
       test.equal('error', resultado)
     })
 
-
+    it('number is not defined', function() {
+      codebreaker.setNumber('');
+      let resultado = codebreaker.adivinar('1234');
+      test.equal('Number is not defined', resultado)
+    })
 })
