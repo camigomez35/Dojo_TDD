@@ -5,7 +5,6 @@ var app = express();
 let codebreaker = new Codebreaker()
 
 
-
 app.get('/setsecret/:secret', function(req, res){
   number = req.params.secret;
   codebreaker.setNumber(number);
